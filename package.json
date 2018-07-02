@@ -1,6 +1,6 @@
 {
   "name": "@cfn-modules/lambda-event-source-cron",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Cron event source for AWS Lambda function with alerting",
   "author": "Michael Wittig <michael@widdix.de>",
   "license": "Apache-2.0",

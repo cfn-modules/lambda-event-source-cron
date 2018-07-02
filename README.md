@@ -1,4 +1,4 @@
-# cfn-modules: AWS Lambda evrnt source: cron
+# cfn-modules: AWS Lambda event source: cron
 
 Cron event source for AWS Lambda function with [alerting](https://www.npmjs.com/package/@cfn-modules/alerting).
 
@@ -24,7 +24,7 @@ Resources:
         LambdaModule: !GetAtt 'Lambda.Outputs.StackName' # required
         AlertingModule: !GetAtt 'Alerting.Outputs.StackName' # optional
         ScheduleExpression: 'rate(1 day)' # optional
-      TemplateURL: './node_modules/@cfn-modules/lambda-function/module.yml'
+      TemplateURL: './node_modules/@cfn-modules/lambda-event-source-cron/module.yml'
 ```
 
 ## Parameters
