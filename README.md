@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/cfn-modules/lambda-event-source-cron.svg?branch=master)](https://travis-ci.org/cfn-modules/lambda-event-source-cron)
+[![NPM version](https://img.shields.io/npm/v/@cfn-modules/lambda-event-source-cron.svg)](https://www.npmjs.com/package/@cfn-modules/lambda-event-source-cron)
+
 # cfn-modules: AWS Lambda event source: cron
 
 Cron event source for AWS Lambda function with [alerting](https://www.npmjs.com/package/@cfn-modules/alerting).
