@@ -1,6 +1,5 @@
 const test = require('ava');
 const cfntest = require('@cfn-modules/test');
-const axios = require('axios');
 
 test('defaults', async t => {
   const stackName = cfntest.stackName();
