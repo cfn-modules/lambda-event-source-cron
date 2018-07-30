@@ -20,11 +20,11 @@ npm i @cfn-modules/lambda-event-source-cron
 AWSTemplateFormatVersion: '2010-09-09'
 Description: 'cfn-modules example'
 Resources:
-  EventSource:
+  Cron:
     Type: 'AWS::CloudFormation::Stack'
     Properties:
       Parameters:
-        LambdaModule: !GetAtt 'Lambda.Outputs.StackName' # required
+        LambdaModule: !GetAtt 'Function.Outputs.StackName' # required
         AlertingModule: !GetAtt 'Alerting.Outputs.StackName' # optional
         ScheduleExpression: 'rate(1 day)' # optional
       TemplateURL: './node_modules/@cfn-modules/lambda-event-source-cron/module.yml'
