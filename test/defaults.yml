@@ -1,0 +1,17 @@
+---
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'cfn-modules test'
+Resources:
+  Cron:
+    Type: 'AWS::CloudFormation::Stack'
+    Properties:
+      Parameters:
+        LambdaModule: !GetAtt 'Function.Outputs.StackName'
+      TemplateURL: './node_modules/@cfn-modules/lambda-event-source-cron/module.yml'
+  Function:
+    Type: 'AWS::CloudFormation::Stack'
+    Properties:
+      Parameters:
+        Handler: 'defaults.handler'
+        Runtime: 'nodejs8.10'
+      TemplateURL: './node_modules/@cfn-modules/lambda-function/module.yml'
