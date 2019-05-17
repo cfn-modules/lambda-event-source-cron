@@ -30,6 +30,14 @@ Resources:
       TemplateURL: './node_modules/@cfn-modules/lambda-event-source-cron/module.yml'
 ```
 
+## Examples
+
+* [serverless-cron](https://github.com/cfn-modules/docs/tree/master/examples/serverless-cron)
+
+## Related modules
+
+* [lambda-function](https://github.com/cfn-modules/lambda-function)
+
 ## Parameters
 
 <table>
