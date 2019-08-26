@@ -62,10 +62,11 @@ Resources:
       Dimensions:
       - Name: RuleName
         Value: !Ref Rule
+      TreatMissingData: notBreaching
 Outputs:
   ModuleId:
     Value: 'lambda-event-source-cron'
   ModuleVersion:
-    Value: '1.0.0'
+    Value: '1.1.0'
   StackName:
     Value: !Ref 'AWS::StackName'
